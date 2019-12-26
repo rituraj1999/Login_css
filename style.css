@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(tech.jpeg) no-repeat center center fixed;
+    background-size: cover
+}
+.box{
+    height: 500px;
+    width: 550px;
+    background-color: #1D1F20;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 150px;
+    background: linear-gradient(45deg, #000, #272727);
+    border-radius: inherit;
+    border-radius: 10px
+}
+.box h1{
+    color: rgb(0, 255, 76);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 230px;
+    margin-top: 30px
+}
+.box input[type="text"],.box input[type="password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus,.box input[type="password"]{
+    width: 200px;
+    border-color:  #3498db;
+}
+.box input[type ="submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type ="submit"]:hover{
+    border-color:   red;
+}
+.box input:hover{
+    border-color: #2ecc71;
+    animation: alternate-reverse;
+    padding: 20px 40px;
+    animation-direction: initial;
+    animation-fill-mode: both;
+}
+h2{
+    color: aliceblue;
+    font-family: comic sans ms;
+    margin-left: 160px;
+    margin-top: 100px;
+}
+.box:before, .box:after
+{
+    content: '';
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    top: -4px;
+    bottom: -4px;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background-size: 300%;
+    z-index: -1;
+    animation: rituraj 2s linear infinite;
+    border-radius: 2px;
+}
+@keyframes rituraj {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.block::after {
+    filter: blur(50px);
+}
